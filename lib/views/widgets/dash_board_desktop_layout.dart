@@ -7,25 +7,26 @@ class DashBoardDesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      
-      body: Row(
-        children: [
-          Expanded(
-            flex: 1,
-            child: CustomDrawer(),
+    return const Row(
+      children: [
+        Expanded(
+          flex: 1,
+          child: CustomDrawer(),
+        ),
+        SizedBox(
+          width: 25,
+        ),
+        Expanded(
+          flex: 2,
+          child: Column(
+            children: [
+              Expanded(
+                child: AllExpensess(),
+              ),
+            ],
           ),
-          SizedBox(width: 32,),
-          Expanded(
-            flex: 2,
-            child:Column(
-              children: [
-               Expanded(child: AllExpensess(),),
-              ],
-            ),
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

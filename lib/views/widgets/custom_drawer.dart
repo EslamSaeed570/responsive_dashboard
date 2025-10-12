@@ -15,6 +15,7 @@ class CustomDrawer extends StatelessWidget {
     return Container(
       color: Colors.white,
       child: const CustomScrollView(
+        
         slivers: [
           SliverToBoxAdapter(
             child: UserInfoListTile(
@@ -46,7 +47,7 @@ class CustomDrawer extends StatelessWidget {
                       title: 'Logout Account', image: Assets.imagesLogout),
                 ),
                 SizedBox(
-                  height: 40,
+                  height: 30,
                 ),
               ],
             ),

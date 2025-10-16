@@ -14,7 +14,7 @@ class AllExpensessItemListView extends StatefulWidget {
 class _AllExpensessItemListViewState extends State<AllExpensessItemListView> {
   final items = const [
     AllExpensessItemModel(
-        image: Assets.imagesCardReceive,
+        image: Assets.imagesMoneys,
         title: 'Balance',
         date: 'April 05',
         price: r"$0.65"),
@@ -24,7 +24,7 @@ class _AllExpensessItemListViewState extends State<AllExpensessItemListView> {
         date: 'April 05',
         price: r"$0.65"),
     AllExpensessItemModel(
-        image: Assets.imagesCardReceive,
+        image: Assets.imagesCardSend,
         title: 'Expenses',
         date: 'April 05',
         price: r"$0.65"),

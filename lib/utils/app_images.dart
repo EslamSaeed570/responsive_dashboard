@@ -1,10 +1,18 @@
 // ignore_for_file: prefer_single_quotes
 class Assets {
   Assets._();
-
+  
   /// Assets for imagesCardReceive
   /// assets/Images/card-receive.svg
   static const String imagesCardReceive = "assets/Images/card-receive.svg";
+
+  /// Assets for imagesCardSend
+  /// assets/Images/card-send.svg
+  static const String imagesCardSend = "assets/Images/card-send.svg";
+
+  /// Assets for imagesCategory2
+  /// assets/Images/category-2.svg
+  static const String imagesCategory2 = "assets/Images/category-2.svg";
 
   /// Assets for imagesChart2
   /// assets/Images/chart-2.svg
@@ -26,19 +34,24 @@ class Assets {
   /// assets/Images/Frame Avatar2.svg
   static const String imagesFrameAvatar2 = "assets/Images/Frame Avatar2.svg";
 
+  /// Assets for imagesGraph
+  /// assets/Images/graph.svg
+  static const String imagesGraph = "assets/Images/graph.svg";
+
   /// Assets for imagesLogout
   /// assets/Images/logout.svg
   static const String imagesLogout = "assets/Images/logout.svg";
 
-  /// Assets for imagesMask group
-  /// assets/Images/Mask group.png
-  static const String imagesMaskgroup = "assets/Images/Mask group.png";
+  /// Assets for imagesMoneys
+  /// assets/Images/moneys.svg
+  static const String imagesMoneys = "assets/Images/moneys.svg";
 
   /// Assets for imagesSetting2
   /// assets/Images/setting-2.svg
   static const String imagesSetting2 = "assets/Images/setting-2.svg";
 
   /// Assets for imagesWallet2
-  /// assets/Images/wallet-2.png
-  static const String imagesWallet2 = "assets/Images/wallet-2.png";
+  /// assets/Images/wallet-2.svg
+  static const String imagesWallet2 = "assets/Images/wallet-2.svg";
 }
+

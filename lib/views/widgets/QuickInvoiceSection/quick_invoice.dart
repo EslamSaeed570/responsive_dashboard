@@ -5,6 +5,7 @@ import 'package:responsive_dashboard/views/widgets/QuickInvoiceSection/quick_inv
 import 'package:responsive_dashboard/views/widgets/QuickInvoiceSection/quick_invoice_headrs.dart';
 import 'package:responsive_dashboard/views/widgets/custom_background_container.dart';
 
+
 class QuickInvoice extends StatelessWidget {
   const QuickInvoice({super.key});
 
@@ -19,11 +20,10 @@ class QuickInvoice extends StatelessWidget {
           Divider(
             height: 48,
             thickness: 0,
-          ),
+          ), 
+       
           QuickInvoiceForm(),
-          SizedBox(
-            height: 24,
-          ),
+        
         ],
       ),
     );

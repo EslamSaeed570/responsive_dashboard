@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/utils/app_styles.dart';
+import 'package:responsive_dashboard/views/widgets/QuickInvoiceSection/latest_transaction_list_view.dart';
 import 'package:responsive_dashboard/views/widgets/QuickInvoiceSection/quick_invoice_headrs.dart';
 import 'package:responsive_dashboard/views/widgets/custom_background_container.dart';
 
@@ -20,8 +21,11 @@ class QuickInvoice extends StatelessWidget {
             'Latest Transaction',
             style: AppStyles.styleMedium16,
           ),
+          SizedBox(height: 16,),
+          LatestTransactionListView(),
         ],
       ),
     );
   }
 }
+

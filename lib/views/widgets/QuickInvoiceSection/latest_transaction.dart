@@ -21,10 +21,7 @@ class LatestTransaction extends StatelessWidget {
           height: 16,
         ),
         LatestTransactionListView(),
-        Divider(
-          height: 48,
-          thickness: 0,
-        ),
+       
       ],
     );
   }

@@ -11,8 +11,11 @@ class MyCard extends StatelessWidget {
       aspectRatio: 420 / 215,
       child: Container(
         decoration: ShapeDecoration(
-          image: const DecorationImage(fit: BoxFit.fill,
-            image: AssetImage(Assets.imagesMaskGroup,),
+          image: const DecorationImage(
+            fit: BoxFit.fill,
+            image: AssetImage(
+              Assets.imagesMaskGroup,
+            ),
           ),
           color: const Color(0xff4EB7F2),
           shape: RoundedRectangleBorder(
@@ -40,7 +43,8 @@ class MyCard extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.only(right: 24),
-              child: Column( crossAxisAlignment: CrossAxisAlignment.end,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Text(
                     '0918 8124 0042 8129',
@@ -53,7 +57,7 @@ class MyCard extends StatelessWidget {
                         AppStyles.styleReguler16.copyWith(color: Colors.white),
                   ),
                   const SizedBox(
-                    height: 27,
+                    height: 14,
                   ),
                 ],
               ),

@@ -1,4 +1,3 @@
-
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +13,7 @@ class _IncomeChartState extends State<IncomeChart> {
 
   @override
   Widget build(BuildContext context) {
-    return PieChart(getPieChartData());
+    return AspectRatio(aspectRatio: 1, child: PieChart(getPieChartData()));
   }
 
   PieChartData getPieChartData() {

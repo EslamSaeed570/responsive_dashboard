@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/utils/app_styles.dart';
 
@@ -10,9 +9,9 @@ class RangeOption extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding:const EdgeInsets.all(12),
+      padding: const EdgeInsets.all(12),
       decoration: ShapeDecoration(
-        color: Colors.white,
+        color: const Color(0xffF1F1F1),
         shape: RoundedRectangleBorder(
           side: const BorderSide(color: Colors.white, width: 1),
           borderRadius: BorderRadius.circular(12),

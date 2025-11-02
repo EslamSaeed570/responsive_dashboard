@@ -4,29 +4,43 @@ import 'package:responsive_dashboard/views/widgets/QuickInvoiceSection/all_expen
 
 import 'package:responsive_dashboard/views/widgets/custom_drawer.dart';
 import 'package:responsive_dashboard/views/widgets/income_section.dart';
+import 'package:responsive_dashboard/views/widgets/my_card_and_transaction_section.dart';
 
 class DashBoardDesktopLayout extends StatelessWidget {
   const DashBoardDesktopLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
-        Expanded(
+        const Expanded(
           flex: 1,
           child: CustomDrawer(),
         ),
-        SizedBox(
+        const SizedBox(
           width: 25,
         ),
-        Expanded(
+        const Expanded(
           flex: 2,
           child: AllExpensesAndQuickInvoiceSection(),
         ),
-        SizedBox(
+        const SizedBox(
           width: 24,
         ),
-        Expanded(flex: 1, child: IncomeSection()),
+        Expanded(
+            flex: 1,
+            child: ListView(
+              children: const [
+                SizedBox(
+                  height: 20,
+                ),
+                MyCardAndTransactionSection(),
+                SizedBox(
+                  height: 24,
+                ),
+                IncomeSection()
+              ],
+            )),
       ],
     );
   }

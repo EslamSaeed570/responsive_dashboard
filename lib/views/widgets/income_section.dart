@@ -11,6 +11,9 @@ class IncomeSection extends StatelessWidget {
     return const Column(
       children: [
         IncomeSectionHeaders(),
+        SizedBox(
+          height: 15,
+        ),
         Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [

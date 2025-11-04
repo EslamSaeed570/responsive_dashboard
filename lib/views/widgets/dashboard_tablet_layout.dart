@@ -1,48 +1,46 @@
 import 'package:flutter/material.dart';
-
 import 'package:responsive_dashboard/views/widgets/QuickInvoiceSection/all_expenses_and_quick_invoice_section.dart';
-
 import 'package:responsive_dashboard/views/widgets/custom_drawer.dart';
 import 'package:responsive_dashboard/views/widgets/income_section.dart';
 import 'package:responsive_dashboard/views/widgets/my_card_and_transaction_section.dart';
 
-class DashBoardDesktopLayout extends StatelessWidget {
-  const DashBoardDesktopLayout({super.key});
+class DashboardTabletLayout extends StatelessWidget {
+  const DashboardTabletLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       children: [
-        const Expanded(
-          flex: 1,
+        Expanded(
           child: CustomDrawer(),
         ),
-        const SizedBox(
+        SizedBox(
           width: 25,
         ),
-        const Expanded(
-          flex: 2,
-          child: SingleChildScrollView(
-            child: AllExpensesAndQuickInvoiceSection(),
-          ),
-        ),
-        const SizedBox(
-          width: 24,
-        ),
         Expanded(
-            flex: 1,
-            child: ListView(
-              children: const [
+          flex: 3,
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                AllExpensesAndQuickInvoiceSection(),
                 SizedBox(
                   height: 20,
                 ),
                 MyCardAndTransactionSection(),
                 SizedBox(
-                  height: 24,
+                  height: 20,
                 ),
-                IncomeSection()
+                IncomeSection(),
+                SizedBox(
+                  height: 20,
+                ),
               ],
-            )),
+            ),
+          ),
+        ),
+        SizedBox(
+          width: 24,
+        ),
       ],
     );
   }

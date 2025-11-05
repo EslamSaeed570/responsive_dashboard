@@ -23,7 +23,7 @@ class DashboardMobileLayout extends StatelessWidget {
           ),
           IncomeSection(),
           SizedBox(
-            height: 20,
+            height: 40,
           ),
         ],
       ),

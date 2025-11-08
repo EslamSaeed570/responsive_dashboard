@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/models/income_item_details_model.dart';
 import 'package:responsive_dashboard/utils/app_styles.dart';
@@ -28,3 +27,4 @@ class IncomeItemDetails extends StatelessWidget {
     );
   }
 }
+ 

@@ -32,7 +32,7 @@ class MyCard extends StatelessWidget {
                 'Name card',
                 style: AppStyles.styleReguler16.copyWith(color: Colors.white),
               ),
-              subtitle: const Text(
+              subtitle:  Text(
                 'Syah Bandi',
                 style: AppStyles.styleMedium20,
               ),

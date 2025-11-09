@@ -14,7 +14,7 @@ class AllExpensessHeaders extends StatelessWidget {
       children: [
          Text(
           'All Expensess',
-          style: AppStyles.styleSemiBold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
        const  Expanded(child: SizedBox()),
       const  RangeOption()

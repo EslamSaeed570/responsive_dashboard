@@ -13,7 +13,7 @@ class IncomeSectionHeaders extends StatelessWidget {
       children: [
         Text(
           'Income',
-          style: AppStyles.styleSemiBold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
      const   RangeOption(),
       ],

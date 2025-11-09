@@ -31,7 +31,7 @@ class _MycardSectionState extends State<MycardSection> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-         Text(
+        Text(
           'My Card',
           style: AppStyles.styleSemiBold20(context),
         ),

@@ -13,9 +13,7 @@ class _IncomeChartState extends State<IncomeChart> {
 
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
-        aspectRatio: MediaQuery.of(context).size.width < 1150 ? 2 / 1 : 1,
-        child: PieChart(getPieChartData()));
+    return AspectRatio(aspectRatio: 1, child: PieChart(getPieChartData()));
   }
 
   PieChartData getPieChartData() {

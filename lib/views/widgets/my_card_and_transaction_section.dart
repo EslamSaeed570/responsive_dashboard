@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/views/widgets/custom_background_container.dart';
 import 'package:responsive_dashboard/views/widgets/my_card_section.dart';

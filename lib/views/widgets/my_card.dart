@@ -8,7 +8,7 @@ class MyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 420 / 215,
+      aspectRatio: 420 / 255,
       child: Container(
         decoration: ShapeDecoration(
           image: const DecorationImage(
@@ -27,12 +27,13 @@ class MyCard extends StatelessWidget {
           children: [
             ListTile(
               contentPadding:
-                  const EdgeInsets.only(left: 31, right: 42, top: 16),
+                  const EdgeInsets.only(left: 31, right: 42, top: 8),
               title: Text(
                 'Name card',
-                style: AppStyles.styleReguler16(context).copyWith(color: Colors.white),
+                style: AppStyles.styleReguler16(context)
+                    .copyWith(color: Colors.white),
               ),
-              subtitle:  Text(
+              subtitle: Text(
                 'Syah Bandi',
                 style: AppStyles.styleMedium20(context),
               ),
@@ -42,24 +43,26 @@ class MyCard extends StatelessWidget {
               child: SizedBox(),
             ),
             Padding(
-              padding: const EdgeInsets.only(right: 24),
+              padding: const EdgeInsets.only(right: 8, left: 35),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Text(
-                    '0918 8124 0042 8129',
-                    style:
-                        AppStyles.styleSemiBold24(context).copyWith(color: Colors.white),
+                  FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: Alignment.centerRight,
+                    child: Text(
+                      '0918 8124 0042 8129',
+                      style: AppStyles.styleSemiBold24(context)
+                          .copyWith(color: Colors.white),
+                    ),
                   ),
                   Text(
                     '12/20 - 120',
-                    style:
-                        AppStyles.styleReguler16(context).copyWith(color: Colors.white),
+                    style: AppStyles.styleReguler16(context)
+                        .copyWith(color: Colors.white),
                   ),
-                const  Flexible(
-                    child:  SizedBox(
-                      height: 20,
-                    ),
+                  const SizedBox(
+                    height: 20,
                   ),
                 ],
               ),

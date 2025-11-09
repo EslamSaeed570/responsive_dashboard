@@ -87,7 +87,7 @@ abstract class AppStyles {
 double getResponsiveFontSize(context, double fonSize) {
   double scaleFactor = getScaleFactor(context);
   double responsiveFontSize = scaleFactor * fonSize;
-  double lowerFontSize = fonSize * 0.8;
+  double lowerFontSize = fonSize * 0.9;
   double upperFontSize = fonSize * 1.2;
   return responsiveFontSize.clamp(lowerFontSize, upperFontSize);
 }
@@ -97,7 +97,7 @@ double getScaleFactor(context) {
   if (width < SizeConfig.tablet) {
     return width / 500;
   } else if (width < SizeConfig.desktop) {
-    return width / 1000;
+    return width / 800;
   } else {
     return width / 1300;
   }

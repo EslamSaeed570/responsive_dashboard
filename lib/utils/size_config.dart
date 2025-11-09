@@ -1,4 +1,4 @@
 class SizeConfig {
-  static const double tablet = 650;
-  static const double desktop = 1150;
+  static const double tablet = 750;
+  static const double desktop = 1200;
 }

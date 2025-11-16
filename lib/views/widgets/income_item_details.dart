@@ -17,7 +17,9 @@ class IncomeItemDetails extends StatelessWidget {
             shape: const OvalBorder(),
           ),
         ),
-        title: Flexible(
+        title: FittedBox(
+          alignment: Alignment.centerLeft,
+          fit: BoxFit.scaleDown,
           child: Text(
             itemDetailsModel.title,
             style: AppStyles.styleReguler16(context),

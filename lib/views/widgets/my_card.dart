@@ -8,7 +8,7 @@ class MyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 420 / 225,
+      aspectRatio: 430 / 260,
       child: Container(
         decoration: ShapeDecoration(
           image: const DecorationImage(
@@ -73,3 +73,4 @@ class MyCard extends StatelessWidget {
     );
   }
 }
+ 

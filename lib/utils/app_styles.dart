@@ -86,18 +86,18 @@ abstract class AppStyles {
 double getResponsiveFontSize(context, double fonSize) {
   double scaleFactor = getScaleFactor(context);
   double responsiveFontSize = scaleFactor * fonSize;
-  double lowerFontSize = fonSize * 0.9;
-  double upperFontSize = fonSize * 1.2;
+  double lowerFontSize = fonSize * 1.2;
+  double upperFontSize = fonSize * 1.4;
   return responsiveFontSize.clamp(lowerFontSize, upperFontSize);
 }
 
 double getScaleFactor(context) {
   var width = MediaQuery.of(context).size.width;
   if (width < SizeConfig.tablet) {
-    return width / 500;
+    return width / 350;
   } else if (width < SizeConfig.desktop) {
     return width / 800;
   } else {
-    return width / 1300;
+    return width / 1350;
   }
 }

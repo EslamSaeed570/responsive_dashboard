@@ -9,15 +9,13 @@ class IncomeDetailsBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var width = MediaQuery.of(context).size.width;
-    return  
-    const Row(
+    return const Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Expanded(
           child: IncomeChart(),
         ),
-        Expanded(child: IncomeDetails()),
+        Expanded(flex: 2, child: IncomeDetails()),
       ],
     );
   }

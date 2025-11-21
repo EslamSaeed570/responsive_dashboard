@@ -14,13 +14,16 @@ class TransactionItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
       ),
       child: ListTile(
-        title: Text(
-          transactionHistoryModel.title,
-          style: AppStyles.styleSemiBold16(context),
+        title: FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            transactionHistoryModel.title,
+            style: AppStyles.styleSemiBold16(context),
+          ),
         ),
         subtitle: Text(transactionHistoryModel.subTitle,
             style: AppStyles.styleReguler16(context)),
-        trailing: Text(transactionHistoryModel.subTitle,
+        trailing: Text(transactionHistoryModel.mount,
             style: AppStyles.styleSemiBold20(context).copyWith(
                 color: transactionHistoryModel.isWithdrawal
                     ? const Color(0xffF3735E)
@@ -41,7 +44,7 @@ class TransactionHistoryListViewItem extends StatelessWidget {
     TransactionHistoryModel(
         title: 'Landing Page project',
         subTitle: '13 Apr, 2022 ',
-        mount: r'$$2,000',
+        mount: r'$2,000',
         isWithdrawal: false),
     TransactionHistoryModel(
         title: 'Cash Withdrawal',

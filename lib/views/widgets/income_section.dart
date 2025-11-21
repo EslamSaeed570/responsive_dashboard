@@ -8,14 +8,17 @@ class IncomeSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        IncomeSectionHeaders(),
-        SizedBox(
-          height: 15,
-        ),
-        IncomeDetailsBody(),
-      ],
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 24),
+      child: Column(
+        children: [
+          IncomeSectionHeaders(),
+          SizedBox(
+            height: 15,
+          ),
+          IncomeDetailsBody(),
+        ],
+      ),
     );
   }
 }
@@ -27,13 +30,13 @@ class IncomeDetailsBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const Row(
+    return const Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Expanded(
           child: IncomeChart(),
         ),
-        Expanded(child: IncomeDetails()),
+        Expanded(flex: 2, child: IncomeDetails()),
       ],
     );
   }
